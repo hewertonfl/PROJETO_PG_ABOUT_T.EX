@@ -1,0 +1,51 @@
+@use 'variaveis' as v;
+@use 'extends';
+
+/*Navbar*/
+.navBg {
+    background: {
+        color: v.$verdeMar;
+    }
+    height: 15vh;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 540px);
+    margin: auto;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    &__left {
+        width: 42.5%;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            margin-right: 10%;
+            a {
+                @extend %navLiProp;
+            }
+        }
+    }
+    &__right {
+        width: 42.5%;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 10%;
+            a {
+                @extend %navLiProp;
+            }
+        }
+    }
+    &__center {
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        img {
+            width: 100%;
+        }
+    }
+}

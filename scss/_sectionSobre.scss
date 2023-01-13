@@ -1,0 +1,68 @@
+@use 'variaveis' as v;
+
+section {
+    background-color: v.$begeExtraClaro;
+}
+.containerSobre {
+    height: 100vh;
+    width: calc(100% - 540px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 181px;
+
+    &__left {
+        width: 42%;
+        height: 990px;
+        background: {
+            image: url('/images/pool.jpg');
+            size: cover;
+        }
+    }
+    &__right {
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+        width: 60%;
+        height: 40%;
+        &__title {
+            color: v.$bege;
+            width: 100%;
+            font: {
+                size: 48px;
+                font-family: v.$lato;
+            }
+            text : {
+                transform: uppercase;
+                align: end;
+                weight: 100;
+            }
+            span {
+                color: v.$bege;
+                font: {
+                    size: 100px;
+                    family: v.$lato;
+                }
+                text: {
+                    transform: uppercase;
+                    align: end;
+                }
+                letter-spacing: 8px;
+                float: right;
+                width: 100%;
+            }
+        }
+        &__text {
+            width: 100%;
+            margin: 0 0 0 auto;
+            text-align: justify;
+            line-height: 1rem;
+            color: v.$bege;
+            padding-left: 15%;
+            font-size: 1.2rem;
+            margin-top: 4rem;
+            line-height: 2rem;
+        }
+    }
+}

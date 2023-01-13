@@ -1,0 +1,10 @@
+@use 'variaveis' as v;
+%navLiProp {
+    display: inline-block;
+    font: {
+        family: v.$lato;
+        weight: 400;
+    }
+    text-transform: uppercase;
+    color: #ffff;
+}

@@ -1,0 +1,66 @@
+@use 'variaveis' as v;
+@use 'extends';
+
+header {
+    background: {
+        size: cover;
+        image: url('../images/top.jpg');
+        repeat: no-repeat;
+        position: center center;
+    }
+    height: 85vh;
+}
+
+.headerContainer {
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    &__R {
+        display: block;
+        color: v.$begeExtraClaro;
+        font: {
+            size: 35rem;
+            family: v.$lato;
+            weight: 400;
+        }
+        position: absolute;
+    }
+    &__C {
+        @extend .headerContainer__R;
+        opacity: 50%;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+    }
+    &__line1 {
+        display: inline-block;
+        font: {
+            size: 96px;
+            family: v.$lato;
+            weight: 400;
+        }
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        color: v.$branco;
+        position: absolute;
+        top: 48%;
+        left: 33%;
+    }
+
+    &__line2 {
+        font-size: 64px;
+        color: v.$branco;
+        text-transform: uppercase;
+        font-family: v.$lato;
+        position: absolute;
+        right: 0;
+        top: 58%;
+        span {
+            letter-spacing: 60px;
+            color: darken(v.$bege, 20);
+            opacity: 40%;
+        }
+    }
+}
