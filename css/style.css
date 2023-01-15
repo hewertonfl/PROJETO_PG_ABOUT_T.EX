@@ -173,7 +173,6 @@ header {
 .containerSobre__right__text {
   width: 100%;
   text-align: justify;
-  line-height: 1rem;
   color: #b18f69;
   padding-left: 15%;
   font-size: 1.78vh;
@@ -197,12 +196,12 @@ header {
 }
 .containerDiferenciais__title {
   text-transform: uppercase;
-  text-align: end;
-  font-size: 90px;
+  text-align: center;
+  font-size: 7.4074074074vh;
   font-family: "Lato";
   color: #b18f69;
   letter-spacing: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 1.8518518519vh;
 }
 .containerDiferenciais__box {
   display: flex;
@@ -210,7 +209,7 @@ header {
   align-items: center;
   border-top: 1px solid #d8caaf;
   border-bottom: 1px solid #d8caaf;
-  padding: 80px 0;
+  padding: 4.6296296296vh 0;
 }
 .containerDiferenciais__box__card {
   width: 30%;
@@ -230,20 +229,20 @@ header {
   align-items: center;
   justify-content: center;
   font-family: "Lato";
-  font-size: 20px;
+  font-size: 1.8518518519vh;
   color: #d8caaf;
   letter-spacing: 2px;
   text-align: justify;
 }
 .containerDiferenciais__box__card .cardText div {
   width: 100%;
-  font-size: 64px;
+  font-size: 5.9259259259vh;
   font-family: "Lato";
   color: #b18f69;
   text-transform: capitalize;
   text-align: center;
   letter-spacing: 10px;
-  padding: 20px 0;
+  padding: 1.8518518519vh;
 }
 
 #cultura {

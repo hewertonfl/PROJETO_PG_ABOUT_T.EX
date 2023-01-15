@@ -7,20 +7,19 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    // padding-top: 150px;
 
     &__title {
         text: {
             transform: uppercase;
-            align: end;
+            align: center;
         }
         font: {
-            size: 90px;
+            size: calc(80vh / 10.8);
             family: v.$lato;
         }
         color: v.$bege;
         letter-spacing: 15px;
-        padding-bottom: 30px;
+        padding-bottom: calc(20vh / 10.8);
     }
     &__box {
         display: flex;
@@ -28,11 +27,10 @@
         align-items: center;
         border-top: 1px solid v.$begeClaro;
         border-bottom: 1px solid v.$begeClaro;
-        padding: 80px 0;
+        padding: calc(50vh / 10.8) 0;
 
         &__card {
             width: 30%;
-            // padding: 80px;
 
             .cardImg {
                 display: flex;
@@ -51,7 +49,7 @@
                 justify-content: center;
                 font: {
                     family: v.$lato;
-                    size: 20px;
+                    size: calc(20vh / 10.8);
                 }
                 color: v.$begeClaro;
                 letter-spacing: 2px;
@@ -59,7 +57,7 @@
                 div {
                     width: 100%;
                     font: {
-                        size: 64px;
+                        size: calc(64vh / 10.8);
                         family: v.$lato;
                     }
                     color: v.$bege;
@@ -69,7 +67,7 @@
                         align: center;
                     }
                     letter-spacing: 10px;
-                    padding: 20px 0;
+                    padding: calc(20vh / 10.8);
                 }
             }
         }
