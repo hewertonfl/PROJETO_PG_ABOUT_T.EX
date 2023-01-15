@@ -26,13 +26,14 @@ header {
             weight: 400;
         }
         position: absolute;
+        bottom: calc(50% - 280px);
     }
     &__C {
         @extend .headerContainer__R;
         opacity: 50%;
         position: absolute;
-        top: 15%;
-        left: 5%;
+        bottom: calc(50% - 420px);
+        left: 130px;
     }
     &__line1 {
         display: inline-block;
@@ -45,8 +46,8 @@ header {
         text-transform: uppercase;
         color: v.$branco;
         position: absolute;
-        top: 48%;
-        left: 33%;
+        bottom: calc(50% - 140px);
+        left: 400px;
     }
 
     &__line2 {
@@ -56,7 +57,7 @@ header {
         font-family: v.$lato;
         position: absolute;
         right: 0;
-        top: 58%;
+        bottom: calc(50% - 140px - 64px);
         span {
             letter-spacing: 60px;
             color: darken(v.$bege, 20);

@@ -7,6 +7,9 @@
         color: v.$verdeMar;
     }
     height: 15vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .navContainer {

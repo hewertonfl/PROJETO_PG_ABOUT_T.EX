@@ -24,6 +24,9 @@ li {
 .navBg {
   background-color: #5ca1b0;
   height: 15vh;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navContainer {
@@ -82,12 +85,13 @@ header {
   font-family: "Lato";
   font-weight: 400;
   position: absolute;
+  bottom: calc(50% - 280px);
 }
 .headerContainer__C {
   opacity: 50%;
   position: absolute;
-  top: 15%;
-  left: 5%;
+  bottom: calc(50% - 420px);
+  left: 130px;
 }
 .headerContainer__line1 {
   display: inline-block;
@@ -98,8 +102,8 @@ header {
   text-transform: uppercase;
   color: #dde1e0;
   position: absolute;
-  top: 48%;
-  left: 33%;
+  bottom: calc(50% - 140px);
+  left: 400px;
 }
 .headerContainer__line2 {
   font-size: 64px;
@@ -108,7 +112,7 @@ header {
   font-family: "Lato";
   position: absolute;
   right: 0;
-  top: 58%;
+  bottom: calc(50% - 140px - 64px);
 }
 .headerContainer__line2 span {
   letter-spacing: 60px;
