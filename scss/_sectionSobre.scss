@@ -10,16 +10,16 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding-top: 181px;
+    padding-top: 10%;
 
     &__left {
         width: 42%;
-        height: 990px;
+        height: calc(100% + 4.63vh);
+        z-index: 10;
         background: {
-            image: url('/images/pool.jpg');
+            image: url('../images/pool.jpg');
             size: cover;
         }
-        z-index: 10;
     }
     &__right {
         display: flex;
@@ -32,7 +32,7 @@
             color: v.$bege;
             width: 100%;
             font: {
-                size: 48px;
+                size: 4.44vh;
                 family: v.$lato;
             }
             text : {
@@ -42,14 +42,14 @@
             span {
                 color: v.$bege;
                 font: {
-                    size: 100px;
+                    size: 9.26vh;
                     family: v.$lato;
                 }
                 text: {
                     transform: uppercase;
                     align: end;
                 }
-                letter-spacing: 8px;
+                letter-spacing: 2%;
                 float: right;
                 width: 100%;
             }
@@ -60,9 +60,9 @@
             line-height: 1rem;
             color: v.$bege;
             padding-left: 15%;
-            font-size: 1.2rem;
-            margin-top: 4rem;
-            line-height: 1.5rem;
+            font-size: 1.78vh;
+            margin-top: 6%;
+            line-height: 2.22vh;
 
             p {
                 padding-bottom: 10px;

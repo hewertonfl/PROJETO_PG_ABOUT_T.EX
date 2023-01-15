@@ -1,0 +1,23 @@
+@use 'variaveis' as v;
+@use 'mixins' as mx;
+
+// @media screen and (max-width: 414px) and (orientation: portrait) {
+//     .headerContainer {
+//         width: 100%;
+//     }
+
+//     .headerContainer__line1 {
+//         display: none;
+//     }
+//     .headerContainer__line2 {
+//         display: none;
+//     }
+// }
+
+// @media screen and (max-width: 1366px) and (orientation: landscape) {
+//     .headerContainer__right_text {
+//         font-size: 0.8rem;
+//     }
+//     .headerContainer__right_title {
+//     }
+// }
