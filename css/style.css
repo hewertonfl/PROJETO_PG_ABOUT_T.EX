@@ -289,56 +289,131 @@ header {
 }
 
 footer {
-  height: 70vh;
+  height: 60vh;
   background-color: #abd1d1;
+  border-top: 100px solid white;
 }
 
 .footerContainer {
   width: 80%;
   margin: 0 auto;
-  padding-top: 180px;
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 100%;
 }
 .footerContainer__col1 {
+  display: flex;
   width: 25%;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .footerContainer__col1 .row1 {
-  height: 20%;
+  height: 160px;
+  width: 175px;
 }
 .footerContainer__col1 .row1 img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .footerContainer__col1 .row2 {
+  display: block;
   height: 80%;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 2px black;
-  color: #dde1e0;
-  font-family: "Lato";
-  font-size: 16px;
-  letter-spacing: 3px;
 }
 .footerContainer__col2 {
   width: 25%;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px black;
-  color: #dde1e0;
+  color: white;
   font-family: "Lato";
   font-size: 16px;
   letter-spacing: 3px;
 }
+.footerContainer__col2 ul {
+  width: 80%;
+  margin: auto;
+}
 .footerContainer__col3 {
-  width: 25%;
+  width: 35%;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Lato";
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+.footerContainer__col3 form {
+  width: 100%;
+}
+.footerContainer__col3 ul h4 {
+  margin-top: 68px;
 }
 .footerContainer__col4 {
-  width: 25%;
+  display: flex;
+  width: 15%;
+  height: 400px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: end;
 }
 
 .footerLi {
-  padding: 10px 0;
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Lato";
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.footerLi--title {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h4 {
+  padding-bottom: 10px;
+}
+
+.fa {
+  font-size: 3rem;
+}
+
+.footerInput {
+  outline: none;
+  border: none;
+  display: block;
+  margin-top: 10px;
+  border-radius: 50px;
+  width: 100%;
+  padding: 15px;
+}
+
+.footerBtn {
+  border: none;
+  width: 8rem;
+  outline: none;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 50px;
+  font-family: "Lato";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #5ca1b0;
+  color: #dde1e0;
+}
+
+.direitos {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato";
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5ca1b0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,53 +2,134 @@
 @use 'mixins' as mx;
 
 footer {
-    height: 70vh;
+    height: 60vh;
     background-color: v.$verdeMarClaro;
+    border-top: 100px solid white;
+    // border-bottom: 100px solid white;
 }
 
 .footerContainer {
     @include mx.container;
-    padding-top: 180px;
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 100%;
 
     &__col1 {
+        display: flex;
         width: 25%;
+        flex-wrap: wrap;
+        align-items: center;
         .row1 {
-            height: 20%;
+            height: 160px;
+            width: 175px;
             img {
-                width: 100%;
+                max-width: 100%;
+                max-height: 100%;
             }
         }
         .row2 {
+            display: block;
             height: 80%;
-            text-transform: uppercase;
-            text-shadow: 1px 1px 2px black;
-            color: v.$branco;
-            font-family: v.$lato;
-            font-size: 16px;
-            letter-spacing: 3px;
         }
     }
     &__col2 {
         width: 25%;
         text-transform: uppercase;
-        text-shadow: 1px 1px 2px black;
-        color: v.$branco;
+        color: white;
         font-family: v.$lato;
         font-size: 16px;
         letter-spacing: 3px;
+
+        ul {
+            width: 80%;
+            margin: auto;
+        }
     }
     &__col3 {
-        width: 25%;
+        width: 35%;
+        text-transform: uppercase;
+        color: white;
+        font-family: v.$lato;
+        font-size: 16px;
+        letter-spacing: 3px;
+
+        form {
+            width: 100%;
+        }
+        ul {
+            h4 {
+                margin-top: 68px;
+            }
+        }
     }
     &__col4 {
-        width: 25%;
+        display: flex;
+        width: 15%;
+        height: 400px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: end;
     }
 }
 .footerLi {
-    padding: 10px 0;
+    padding-top: 20px;
+    // text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: v.$lato;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.footerLi--title {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h4 {
+    padding-bottom: 10px;
+    // color: v.$verdeMar;
+}
+
+.fa {
+    font-size: 3rem;
+}
+
+.footerInput {
+    outline: none;
+    border: none;
+    display: block;
+    margin-top: 10px;
+    border-radius: 50px;
+    width: 100%;
+    padding: 15px;
+}
+.footerBtn {
+    border: none;
+    width: 8rem;
+    outline: none;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 50px;
+    font-family: v.$lato;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: v.$verdeMar;
+    color: v.$branco;
+}
+.direitos {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    font: {
+        family: v.$lato;
+        size: 16px;
+    }
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: v.$verdeMar;
 }
