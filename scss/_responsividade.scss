@@ -23,25 +23,35 @@
         flex-direction: row-reverse;
 
         img {
-            max-width: 25%;
-            max-height: 25%;
+            max-width: 22%;
+            max-height: 22%;
         }
     }
     /*Header*/
     .headerContainer {
+        height: 100%;
+        display: flex;
+        justify-content: center;
         &__R {
-            bottom: calc(182vh / 8.74);
+            display: flex;
+            align-items: center;
+            bottom: calc(50% - 190.5px);
+            left: 0%;
             font: {
-                size: calc(450vh / 10.8);
+                size: calc(381vh / 9.14);
+                size: 381px;
             }
         }
 
         &__C {
+            display: flex;
+            align-items: center;
             font: {
-                size: calc(450vh / 10.8);
+                size: calc(381vh / 9.14);
+                size: 381px;
             }
-            bottom: calc(91.04vh / 8.74);
-            left: calc(90vw / 4.14);
+            bottom: calc(50% - 285.75px);
+            left: 95.25px;
         }
         &__line1 {
             display: none;
