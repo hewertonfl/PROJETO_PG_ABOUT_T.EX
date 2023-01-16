@@ -480,12 +480,13 @@ h4 {
   }
   /*Header*/
   .headerContainer__R {
+    bottom: 20.823798627vh;
     font-size: 41.6666666667vh;
   }
   .headerContainer__C {
     font-size: 41.6666666667vh;
-    bottom: calc(50% - 38.8888888889vh);
-    left: 17.5120772947vw;
+    bottom: 10.4164759725vh;
+    left: 21.7391304348vw;
   }
   .headerContainer__line1 {
     display: none;
