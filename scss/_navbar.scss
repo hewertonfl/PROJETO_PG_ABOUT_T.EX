@@ -28,6 +28,9 @@
             justify-content: space-around;
             a {
                 @extend %navLiProp;
+                &:hover {
+                    color: darken(v.$bege, 10);
+                }
             }
         }
     }
@@ -38,6 +41,9 @@
             justify-content: space-around;
             a {
                 @extend %navLiProp;
+                &:hover {
+                    color: darken(v.$bege, 10);
+                }
             }
         }
     }

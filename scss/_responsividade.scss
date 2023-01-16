@@ -117,4 +117,55 @@
             }
         }
     }
+    /*footer*/
+    footer {
+        height: auto;
+    }
+    .footerContainer {
+        height: auto;
+        flex-wrap: wrap;
+        &__col1 {
+            width: 100%;
+            .row1 {
+                margin: auto;
+            }
+            // .row2 {
+            //     text-align: center;
+            // }
+        }
+        &__col2 {
+            width: 100%;
+            margin: 10% 0;
+            ul {
+                width: 100%;
+                h4 {
+                    text-align: center;
+                }
+            }
+        }
+        &__col3 {
+            width: 100%;
+            ul h4 {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                text-align: center;
+            }
+        }
+        &__col4 {
+            width: 100%;
+            height: 100px;
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                li {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .direitos {
+        font-size: 10px;
+    }
 }

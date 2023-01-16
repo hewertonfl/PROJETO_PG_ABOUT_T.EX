@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+/*Cores*/
+/*fontes*/
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +16,6 @@ a {
   text-decoration: none;
 }
 
-/*Cores*/
-/*fontes*/
 .navContainer__left ul a, .navContainer__right ul a {
   display: inline-block;
   font-family: "Lato";
@@ -49,12 +49,18 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.navContainer__left ul a:hover {
+  color: #98764f;
+}
 .navContainer__right {
   width: 42.5%;
 }
 .navContainer__right ul {
   display: flex;
   justify-content: space-around;
+}
+.navContainer__right ul a:hover {
+  color: #98764f;
 }
 .navContainer__center {
   display: flex;
@@ -304,6 +310,149 @@ header {
   line-height: 2.962962963vh;
 }
 
+footer {
+  height: 60vh;
+  background-color: #abd1d1;
+  border-top: 100px solid white;
+}
+
+.footerContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.footerContainer__col1 {
+  display: flex;
+  width: 25%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footerContainer__col1 .row1 {
+  height: 160px;
+  width: 175px;
+}
+.footerContainer__col1 .row1 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.footerContainer__col1 .row2 {
+  display: block;
+  height: 80%;
+}
+.footerContainer__col2 {
+  width: 25%;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Lato";
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-bottom: 81px;
+}
+.footerContainer__col2 ul {
+  width: 80%;
+  margin: auto;
+}
+.footerContainer__col2 ul li {
+  padding-top: 20px;
+}
+.footerContainer__col2 ul li a:hover {
+  color: #98764f;
+}
+.footerContainer__col3 {
+  width: 35%;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Lato";
+  font-size: 1.4814814815vh;
+  letter-spacing: 3px;
+}
+.footerContainer__col3 form {
+  width: 100%;
+}
+.footerContainer__col3 ul h4 {
+  margin-bottom: 1.8518518519vh;
+}
+.footerContainer__col4 {
+  display: flex;
+  width: 15%;
+  height: 37.037037037vh;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: end;
+}
+.footerContainer__col4 ul li a i:hover {
+  color: #98764f;
+  cursor: pointer;
+}
+
+.footerText {
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Lato";
+  font-size: 1.4814814815vh;
+  letter-spacing: 3px;
+}
+
+.footerText--title {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h4 {
+  padding-bottom: 0.9259259259vh;
+}
+
+.fa {
+  font-size: 3rem;
+}
+
+.footerInput {
+  outline: none;
+  border: none;
+  display: block;
+  margin-top: 10px;
+  border-radius: 50px;
+  width: 100%;
+  padding: 15px;
+}
+
+.footerBtn {
+  border: none;
+  width: 8rem;
+  outline: none;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 50px;
+  font-family: "Lato";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #5ca1b0;
+  color: #dde1e0;
+}
+.footerBtn:hover {
+  background-color: #478592;
+  cursor: pointer;
+}
+
+.direitos {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato";
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5ca1b0;
+}
+
 @media screen and (max-width: 414px) and (orientation: portrait) {
   /*Navbar*/
   .navContainer__left {
@@ -411,6 +560,54 @@ header {
   .containerRegiao__regContent__text {
     width: 100%;
     padding: 0;
+  }
+  /*footer*/
+  footer {
+    height: auto;
+  }
+  .footerContainer {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .footerContainer__col1 {
+    width: 100%;
+  }
+  .footerContainer__col1 .row1 {
+    margin: auto;
+  }
+  .footerContainer__col2 {
+    width: 100%;
+    margin: 10% 0;
+  }
+  .footerContainer__col2 ul {
+    width: 100%;
+  }
+  .footerContainer__col2 ul h4 {
+    text-align: center;
+  }
+  .footerContainer__col3 {
+    width: 100%;
+  }
+  .footerContainer__col3 ul h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .footerContainer__col4 {
+    width: 100%;
+    height: 100px;
+  }
+  .footerContainer__col4 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .footerContainer__col4 ul li {
+    padding: 0;
+  }
+  .direitos {
+    font-size: 10px;
   }
 }
 
