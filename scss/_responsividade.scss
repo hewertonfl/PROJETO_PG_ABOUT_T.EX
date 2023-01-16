@@ -1,23 +1,120 @@
 @use 'variaveis' as v;
 @use 'mixins' as mx;
 
-// @media screen and (max-width: 414px) and (orientation: portrait) {
-//     .headerContainer {
-//         width: 100%;
-//     }
+@media screen and (max-width: 414px) and (orientation: portrait) {
+    /*Navbar*/
+    .navContainer__left {
+        display: none;
+    }
+    .navContainer__right {
+        display: none;
+    }
+    .navContainer__center {
+        display: none;
+    }
+    .toggle {
+        display: flex;
+        font-size: 30px;
+        color: white;
+        text-align: end;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
 
-//     .headerContainer__line1 {
-//         display: none;
-//     }
-//     .headerContainer__line2 {
-//         display: none;
-//     }
-// }
+        img {
+            max-width: 25%;
+            max-height: 25%;
+        }
+    }
+    /*Header*/
 
-// @media screen and (max-width: 1366px) and (orientation: landscape) {
-//     .headerContainer__right_text {
-//         font-size: 0.8rem;
-//     }
-//     .headerContainer__right_title {
-//     }
-// }
+    .headerContainer__line1 {
+        display: none;
+    }
+    .headerContainer__line2 {
+        display: none;
+    }
+
+    /*section sobre*/
+    .containerSobre {
+        flex-direction: column-reverse;
+        height: auto;
+        &__right {
+            width: 100%;
+            height: 50%;
+            &__title {
+                width: 100%;
+                span {
+                    font-size: 60px;
+                }
+            }
+            &__text {
+                padding: 0;
+            }
+        }
+        &__left {
+            width: 100%;
+            height: 60vh;
+            z-index: 0;
+        }
+    }
+    /*section diferenciais*/
+    #diferenciais {
+        height: auto;
+    }
+    .containerDiferenciais {
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        &__box {
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            height: auto;
+            border-bottom: none;
+
+            &__card {
+                width: 100%;
+                height: auto;
+                padding-top: 6%;
+            }
+        }
+        &__title {
+            font-size: calc(24vh / 9.14);
+            margin-top: 10%;
+        }
+    }
+    /*section Conheça a Região*/
+    .containerRegiao {
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        &__regTitle {
+            @extend .containerDiferenciais__title;
+            &::after {
+                font-size: calc(15vh / 9.14);
+                letter-spacing: normal;
+                top: calc(18vh / 9.14);
+            }
+        }
+        &__regContent {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            padding-top: 10%;
+            &__img {
+                width: 100%;
+                padding-top: 5%;
+                img {
+                    width: 100%;
+                }
+            }
+            &__text {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+}

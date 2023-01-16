@@ -21,24 +21,24 @@ header {
         display: block;
         color: v.$begeExtraClaro;
         font: {
-            size: 35rem;
+            size: calc(560vh / 10.8);
             family: v.$lato;
             weight: 400;
         }
         position: absolute;
-        bottom: calc(50% - 280px);
+        bottom: calc(50% - 280vh / 10.8);
     }
     &__C {
         @extend .headerContainer__R;
         opacity: 50%;
         position: absolute;
-        bottom: calc(50% - 420px);
-        left: 130px;
+        bottom: calc(50% - 420vh / 10.8);
+        left: calc(130vw / 19.2);
     }
     &__line1 {
         display: inline-block;
         font: {
-            size: 96px;
+            size: calc(96vh / 10.8);
             family: v.$lato;
             weight: 400;
         }
@@ -46,18 +46,19 @@ header {
         text-transform: uppercase;
         color: v.$branco;
         position: absolute;
-        bottom: calc(50% - 140px);
-        left: 400px;
+        bottom: calc(50% - 140vh / 10.8);
+        left: calc(400vw / 19.2);
+        // left: 400px;
     }
 
     &__line2 {
-        font-size: 64px;
+        font-size: calc(64vh / 10.8);
         color: v.$branco;
         text-transform: uppercase;
         font-family: v.$lato;
         position: absolute;
         right: 0;
-        bottom: calc(50% - 140px - 64px);
+        bottom: calc(50% - 204vh / 10.8);
         span {
             letter-spacing: 60px;
             color: darken(v.$bege, 20);

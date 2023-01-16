@@ -40,6 +40,7 @@ footer {
         font-family: v.$lato;
         font-size: 16px;
         letter-spacing: 3px;
+        margin-bottom: 81px;
 
         ul {
             width: 80%;
@@ -55,7 +56,7 @@ footer {
         text-transform: uppercase;
         color: white;
         font-family: v.$lato;
-        font-size: 16px;
+        font-size: calc(16vh / 10.8);
         letter-spacing: 3px;
 
         form {
@@ -63,14 +64,14 @@ footer {
         }
         ul {
             h4 {
-                margin-top: 68px;
+                margin-bottom: calc(20vh / 10.8);
             }
         }
     }
     &__col4 {
         display: flex;
         width: 15%;
-        height: 400px;
+        height: calc(400vh / 10.8);
         margin: 0 auto;
         align-items: center;
         justify-content: end;
@@ -81,7 +82,7 @@ footer {
     text-transform: uppercase;
     color: white;
     font-family: v.$lato;
-    font-size: 16px;
+    font-size: calc(16vh / 10.8);
     letter-spacing: 3px;
 }
 .footerText--title {
@@ -90,7 +91,7 @@ footer {
 }
 
 h4 {
-    padding-bottom: 10px;
+    padding-bottom: calc(10vh / 10.8);
 }
 
 .fa {
