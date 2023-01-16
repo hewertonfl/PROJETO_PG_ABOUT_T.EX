@@ -28,14 +28,27 @@
         }
     }
     /*Header*/
+    .headerContainer {
+        &__R {
+            font: {
+                size: calc(450vh / 10.8);
+            }
+        }
 
-    .headerContainer__line1 {
-        display: none;
+        &__C {
+            font: {
+                size: calc(450vh / 10.8);
+            }
+            bottom: calc(50% - 420vh / 10.8);
+            left: calc(72.5vw / 4.14);
+        }
+        &__line1 {
+            display: none;
+        }
+        &__line2 {
+            display: none;
+        }
     }
-    .headerContainer__line2 {
-        display: none;
-    }
-
     /*section sobre*/
     .containerSobre {
         flex-direction: column-reverse;
@@ -80,6 +93,12 @@
                 width: 100%;
                 height: auto;
                 padding-top: 6%;
+
+                .cardText {
+                    div {
+                        font-size: calc(20vh / 9.14);
+                    }
+                }
             }
         }
         &__title {

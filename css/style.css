@@ -131,7 +131,7 @@ header {
 }
 .headerContainer__line2 span {
   letter-spacing: 60px;
-  color: #765c3e;
+  color: #55422c;
   opacity: 40%;
 }
 
@@ -253,7 +253,7 @@ header {
 }
 .containerDiferenciais__box__card .cardText div {
   width: 100%;
-  font-size: 5.9259259259vh;
+  font-size: 4.6296296296vh;
   font-family: "Lato";
   color: #b18f69;
   text-transform: capitalize;
@@ -283,7 +283,7 @@ header {
   content: "a região";
   position: relative;
   top: 5.0925925926vh;
-  right: 17.7083333333vw;
+  right: 16.9270833333vw;
   font-size: 4.4444444444vh;
 }
 .containerRegiao__regContent {
@@ -479,6 +479,14 @@ h4 {
     max-height: 25%;
   }
   /*Header*/
+  .headerContainer__R {
+    font-size: 41.6666666667vh;
+  }
+  .headerContainer__C {
+    font-size: 41.6666666667vh;
+    bottom: calc(50% - 38.8888888889vh);
+    left: 17.5120772947vw;
+  }
   .headerContainer__line1 {
     display: none;
   }
@@ -529,6 +537,9 @@ h4 {
     width: 100%;
     height: auto;
     padding-top: 6%;
+  }
+  .containerDiferenciais__box__card .cardText div {
+    font-size: 2.1881838074vh;
   }
   .containerDiferenciais__title, .containerRegiao__regTitle {
     font-size: 2.6258205689vh;
